@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/darkupd.css" id = "theme">
+    <script src="js/updates.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => { 
+    VANTA.BIRDS({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 940.00,
+      minWidth: 1920.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color1: 0x665e5e,
+      color2: 0x727272,
+      colorMode: "lerp",
+      birdSize: 2.80,
+      quantity: 3.00,
+      backgroundAlpha: 0.00
+    })
+    })
+    </script>
+    <title>Xkewzen - Updates</title>
+</head>
+<body>
+    <div class="all">
+        <div id="vanta"></div>
+        <div id="menu-burger">
+        
+            <button id="homepagebtn" onclick="home()">About me</button>
+            <button id="linksbtn" onclick="link()">Links</button>
+            <button id="worksbtn" onclick="works()">Portfolio</button>
+            
+            </div>
+        <button id="mode" onclick = 'them()'><img src="images/Sun.png" alt="" id="sunmoon"></button>
+        <button id="log" onclick = 'devlog()'><img src="images/bell.png" alt="" id="bell"></button>
+        <button id="v001" onclick="botvers()">v0.1</button>
+        <button id="burger" onclick="menu()"><img src="images/burger.png" alt="" id = "menu-icon"></button>
+        <div id="v01">
+        <h1 class = "added">Added:</h1>
+        <p class = "updtext">Switch themes</p>
+        <p class="updtext">Animated background</p>
+        <p class="updtext">Full animation page</p>
+        </div>
+    <div class="menu">
+        <div id="lin">
+        <ul id="mn">
+            <li class = 'me'><a href="main.html">Xkewzen   </a></li>
+            <li class = 'me'><a href="works.html">Works   </a></li>
+            <li class = 'me'><a href="links.html">Links</a></li>
+        </ul>
+        </div>
+        <hr>
+    </div>
+    </div>
+
+</html>
